@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@layer utilities {
+  .chatcolor {
+    /* linear-gradient(90deg, #c94b4b 0%, #4b134f 100%) */
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 0.6311566863073355) 0%,
+      rgba(253, 29, 29, 0.6703723725818452) 50%,
+      rgba(252, 176, 69, 0.7123891793045343) 100%
+    );
+  }
+  .buttoncolor {
+    background-color: #fd9397 !important;
+  }
+  .label {
+    color: #e06e6e;
+  }
+  .inputborder {
+    border: 1px solid #de9696;
+  }
+  .button {
+    padding: 10px 12px !important;
+    border-radius: 6px;
+    margin: 10px 12px !important;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+body {
+  margin: 0;
+}
